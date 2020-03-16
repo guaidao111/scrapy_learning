@@ -1,0 +1,93 @@
+2020-03-15 16:57:03 [scrapy.utils.log] INFO: Scrapy 2.0.0 started (bot: xpc)
+2020-03-15 16:57:03 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-15 16:57:03 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-15 16:57:03 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'xpc',
+ 'LOG_FILE': 'all.log',
+ 'NEWSPIDER_MODULE': 'xpc.spiders',
+ 'SPIDER_MODULES': ['xpc.spiders']}
+2020-03-15 16:57:03 [scrapy.extensions.telnet] INFO: Telnet Password: f8cbe5e5f43f6a8b
+2020-03-15 16:57:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-15 16:57:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-15 16:57:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-15 16:57:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-03-15 16:57:03 [scrapy.core.engine] INFO: Spider opened
+2020-03-15 16:57:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-15 16:57:03 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-03-15 16:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/sort-like?from=navigator> (referer: None)
+2020-03-15 16:57:04 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-2> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-03-15 16:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-66> (referer: https://www.xinpianchang.com/channel/index/sort-like?from=navigator)
+2020-03-15 16:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-2> (referer: https://www.xinpianchang.com/channel/index/sort-like?from=navigator)
+2020-03-15 16:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-4> (referer: https://www.xinpianchang.com/channel/index/sort-like?from=navigator)
+2020-03-15 16:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-6> (referer: https://www.xinpianchang.com/channel/index/sort-like?from=navigator)
+2020-03-15 16:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-5> (referer: https://www.xinpianchang.com/channel/index/sort-like?from=navigator)
+2020-03-15 16:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-3> (referer: https://www.xinpianchang.com/channel/index/sort-like?from=navigator)
+2020-03-15 16:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-1> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-2)
+2020-03-15 16:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-7> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-6)
+2020-03-15 16:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-8> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-6)
+2020-03-15 16:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-9> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-7)
+2020-03-15 16:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-10> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-8)
+2020-03-15 16:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-11> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-9)
+2020-03-15 16:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-12> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-10)
+2020-03-15 16:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-13> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-11)
+2020-03-15 16:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-14> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-12)
+2020-03-15 16:57:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-15> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-13)
+2020-03-15 16:57:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-16> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-14)
+2020-03-15 16:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-17> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-15)
+2020-03-15 16:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-18> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-16)
+2020-03-15 16:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-19> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-17)
+2020-03-15 16:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-20> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-18)
+2020-03-15 16:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-21> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-19)
+2020-03-15 16:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-22> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-20)
+2020-03-15 16:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-24> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-22)
+2020-03-15 16:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-23> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-21)
+2020-03-15 16:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-26> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-24)
+2020-03-15 16:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-25> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-24)
+2020-03-15 16:57:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-27> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-26)
+2020-03-15 16:57:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-28> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-26)
+2020-03-15 16:57:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-29> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-27)
+2020-03-15 16:57:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-31> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-29)
+2020-03-15 16:57:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-30> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-28)
+2020-03-15 16:57:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-32> (referer: https://www.xinpianchang.com/channel/index/type-/sort-like/duration_type-0/resolution_type-/page-30)
+2020-03-15 16:57:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-03-15 16:57:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 22286,
+ 'downloader/request_count': 34,
+ 'downloader/request_method_count/GET': 34,
+ 'downloader/response_bytes': 1585003,
+ 'downloader/response_count': 34,
+ 'downloader/response_status_count/200': 34,
+ 'dupefilter/filtered': 213,
+ 'elapsed_time_seconds': 9.924532,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 15, 8, 57, 13, 399664),
+ 'log_count/DEBUG': 35,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 14,
+ 'response_received_count': 34,
+ 'scheduler/dequeued': 34,
+ 'scheduler/dequeued/memory': 34,
+ 'scheduler/enqueued': 34,
+ 'scheduler/enqueued/memory': 34,
+ 'start_time': datetime.datetime(2020, 3, 15, 8, 57, 3, 475132)}
+2020-03-15 16:57:13 [scrapy.core.engine] INFO: Spider closed (finished)
