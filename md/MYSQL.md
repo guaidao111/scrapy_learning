@@ -44,7 +44,7 @@ exit 退出
 | desc 表名              | 查看表结构           |
 
 
-```
+```sql
 # 建表
 create table testinfo(
   id int,

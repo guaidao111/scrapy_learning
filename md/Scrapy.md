@@ -21,8 +21,11 @@
 
 
 
+```redis
 scrapy_redis 
 
  lpush discovery:start_urls https://www.xinpianchang.com/channel/index/sort-like?from=navigator
+```
 
 可以设置等待传入网页参数，这样可以同时进行多个页面爬取（但只使用于相同类型的页面设置）
+

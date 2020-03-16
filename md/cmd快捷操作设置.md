@@ -2,7 +2,7 @@
 
 
 
-```linux
+```cmd
 @echo off
 doskey ping_test=ping www.baidu.com $*
 doskey st=shutdown -s $*
