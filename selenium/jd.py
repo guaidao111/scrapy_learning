@@ -3,7 +3,9 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import pyexcel
 
 # 传入参数，让京东去搜索
 
@@ -29,7 +31,12 @@ if __name__ == '__main__':
 
     has_next = True
     rows = []
+    page_count = 0
+
     while has_next:
+        page_count += 1
+        if page_count > 10:
+            break
         time.sleep(3)
         cur_page = driver.find_element_by_xpath('//div[@id="J_bottomPage"]//a[@class="curr"]').text
         print('---------current page is %s ----------' % cur_page)
@@ -57,7 +64,7 @@ if __name__ == '__main__':
             has_next = False
         else:
             next_page.click()
+    pyexcel.save_as(records=rows, dest_file_name='%s.xls' % keyword)
 
-    print(rows)
 
     driver.quit()
