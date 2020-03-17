@@ -1,5 +1,0 @@
-scrapy
-redis
-requests
-pymysql
-pycurl
