@@ -6,9 +6,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pyexcel
+import pymysql
 
 # 传入参数，让京东去搜索
-
 if __name__ == '__main__':
     keyword = 'iphone'
     if len(sys.argv) > 1:
@@ -47,6 +47,7 @@ if __name__ == '__main__':
         driver.execute_script('window.scrollTo(0, %s)' % y)
         # 获取所有商品的节点
         products = driver.find_elements_by_class_name('gl-item')
+        len(products)
         for p in products:
             row = {}
             sku = p.get_attribute('data-sku')
@@ -66,5 +67,6 @@ if __name__ == '__main__':
             next_page.click()
     pyexcel.save_as(records=rows, dest_file_name='%s.xls' % keyword)
 
+    conn = pymysql.connect(host='127.0.0.1',user='root',password='root',db='self_dev',charset='utf8',cursorclass=pymysql.cursors.DictCursor)
 
     driver.quit()
