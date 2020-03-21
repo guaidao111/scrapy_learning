@@ -24,6 +24,10 @@ foreign_info = country_code['data']['countries']
 conn = pymysql.connect(host='127.0.0.1',port=3306,user='root',password='root',db='wordpress01',charset='utf8')
 # 使用游标操作
 cursor = conn.cursor()
+delete = """DELETE FROM city_id"""
+cursor.execute(delete)
+delete = """DELETE FROM country_id"""
+cursor.execute(delete)
 city=[]
 # 将省信息输入国家级别表格
 for province in province_info:
@@ -63,3 +67,4 @@ for i in foreign_info:
 
 cursor.close()
 conn.close()
+print('国家及城市代码更新完成')
