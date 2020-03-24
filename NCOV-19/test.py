@@ -168,14 +168,8 @@ for country_url in country_urls:
             c['death'] = city['deathadd']
             c['cure'] = city['cureadd']
             foreign_city_info_list.append(tuple(c.values()))
-country_info_list
-country_history_list
-foreign_city_info_list
 
-# 连接mysql服务器
-conn = pymysql.connect(host='127.0.0.1',port=3306,user='root',password='root',db='wordpress01',charset='utf8')
-# 使用游标操作
-cursor = conn.cursor()
+
 
 sql = "INSERT INTO foreign_country_info(`date`,`country`,`city`,`type`,`total`,`deathtotal`,`curetotal`,`connadd`,`deathadd`,`cureadd`) values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
 cursor.executemany(sql,country_info_list)
